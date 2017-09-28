@@ -25,8 +25,8 @@ COPY entrypoint.sh /usr/local/bin/
 
 EXPOSE 80
 
-VOLUME [ "/var/www/html/data/User/admin/home/shared" ]
-VOLUME [ "/var/www/html/data" ]
+#VOLUME [ "/var/www/html/data/User/admin/home/shared" ]
+#VOLUME [ "/var/www/html/data" ]
 VOLUME [ "/shared" ]
 
 ENTRYPOINT ["entrypoint.sh"]
