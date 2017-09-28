@@ -25,7 +25,7 @@ COPY entrypoint.sh /usr/local/bin/
 
 EXPOSE 80
 
-VOLUME [ "/var/www/html/data/User/admin/home/shared" ]
+VOLUME [ "/var/www/html/data/User/admin/shared" ]
 
 ENTRYPOINT ["entrypoint.sh"]
 CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
